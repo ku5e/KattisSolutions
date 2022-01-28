@@ -3,14 +3,12 @@
 #date: 01/28/2022
 #Purpose:
 
-prob = input().split(';')
-total = []
-for nums in prob:
-	if '-' in nums:
-		temp = [int(i) for i in nums.split('-')]
-		for i in range (temp[1] - temp[0] + 1):
-			total.append(True)
-	else:
-		total.append(True)
+arr = input().split(';')
+count = len(arr)
 
-print(len(total))
+for num in arr:
+	if '-' in num:
+		temp = num.split('-')
+		count += int(temp[1]) - int(temp[0])
+		
+print(count)
