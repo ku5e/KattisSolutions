@@ -4,10 +4,9 @@
 #Purpose: Filip
 
 x, y = input().split()
-x = x[::-1]
-y = y[::-1]
-x = int(x)
-y = int(y)
+x = int(x[::-1])
+y = int(y[::-1])
+
 if(x > y):
 	print(x)
 else:

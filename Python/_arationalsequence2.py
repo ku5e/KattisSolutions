@@ -8,4 +8,6 @@ for i in range(count):
 	case, test = list(input().split())
 	case = int(case)
 	num, den = list(map(int, test.split('/')))
+	
 	print(case, num, den)
+	
