@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 #/*
 #* Programmer: MM KU5E@KU5E.COM
-#* date: XX/XX/XXXX
-#* Purpose:
+#* date: 05/13/2022
+#* Purpose: SquarePeg
 #*/
 
 #imports
@@ -11,15 +11,12 @@
 
 #main
 def main():
-	x = int(input())
-	n = int(input())
-	sum = 0
+	l, r = list(map(int, input().split()))
+	if (r**2) >= ((l**2)/2):
+		print('fits')
+	else:
+		print('nope')
 	
-	for i in range(n):
-		month = int(input())
-		sum += x - month
-		
-	print(sum + x)
 	return 0
 
 #if name main main

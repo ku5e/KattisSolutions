@@ -11,15 +11,11 @@
 
 #main
 def main():
-	x = int(input())
-	n = int(input())
-	sum = 0
+	arr = list(map(int, input().split()))
+	arr = sorted(arr)
+	for num in arr:
+		print(num, end=' ')
 	
-	for i in range(n):
-		month = int(input())
-		sum += x - month
-		
-	print(sum + x)
 	return 0
 
 #if name main main

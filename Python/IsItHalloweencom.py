@@ -11,17 +11,13 @@
 
 #main
 def main():
-	x = int(input())
-	n = int(input())
-	sum = 0
+	day = list(input().split())
+	if (day[0] == 'DEC' and day[1] == '25') or (day[0] == 'OCT' and day[1] == '31'):
+		print('yup')
+	else:
+		print('nope')
 	
-	for i in range(n):
-		month = int(input())
-		sum += x - month
-		
-	print(sum + x)
-	return 0
-
+	
 #if name main main
 if __name__ == "__main__":
 	main();
