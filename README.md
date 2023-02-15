@@ -1,6 +1,6 @@
 # KattisSolutions
  
- ```
+ ```Java
  class Main {
   public static void main(String[] args) {
     int aCount = 0;
